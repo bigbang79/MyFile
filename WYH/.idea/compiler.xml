@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wyh_Common" />
+        <module name="wyh_Domain" />
+        <module name="wyh_LoginController" />
+        <module name="wyh_Mapper" />
+        <module name="wyh_SSOService" />
+        <module name="wyh_SSOServiceProvider" />
+        <module name="wyh_UserService" />
+        <module name="wyh_UserServiceProvider" />
+        <module name="wyh_Web" />
+        <module name="wyh_WebController" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
