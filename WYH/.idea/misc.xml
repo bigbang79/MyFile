@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/wyh_LoginController" />
+    <file type="web" url="file://$PROJECT_DIR$/wyh_UserServiceProvider" />
     <file type="web" url="file://$PROJECT_DIR$/wyh_Web" />
     <file type="web" url="file://$PROJECT_DIR$/wyh_WebController" />
+    <file type="web" url="file://E:/wyh/10000Wyh/10000Wyh_LoginController" />
+    <file type="web" url="file://E:/wyh/10000Wyh/10000Wyh_UserServiceProvider" />
+    <file type="web" url="file://E:/wyh/10000Wyh/10000Wyh_Web" />
+    <file type="web" url="file://E:/wyh/10000Wyh/10000Wyh_WebController" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="E:/wyh/10000Wyh/pom.xml" />
       </list>
     </option>
   </component>

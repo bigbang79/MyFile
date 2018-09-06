@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head><title>HTTP Status 500 – Internal Server Error</title>
+    <style type="text/css">h1 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 22px;
+    }
+
+    h2 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 16px;
+    }
+
+    h3 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 14px;
+    }
+
+    body {
+        font-family: Tahoma, Arial, sans-serif;
+        color: black;
+        background-color: white;
+    }
+
+    b {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+    }
+
+    p {
+        font-family: Tahoma, Arial, sans-serif;
+        background: white;
+        color: black;
+        font-size: 12px;
+    }
+
+    a {
+        color: black;
+    }
+
+    a.name {
+        color: black;
+    }
+
+    .line {
+        height: 1px;
+        background-color: #525D76;
+        border: none;
+    }</style>
+</head>
+<body><h1>HTTP Status 500 – Internal Server Error</h1>
+<hr class="line"/>
+<p><b>Type</b> Exception Report</p>
+<p><b>Message</b> Request processing failed; nested exception is com.alibaba.dubbo.rpc.RpcException: Failed to invoke
+    the method save in the service com.wyh.service.user.UserService. Tried 1 times of the providers
+    [192.168.130.1:20880] (1&#47;1) from the registry 47.98.186.179:2181 on the consumer 192.168.130.1 using the dubbo
+    version 2.6.2. Last error is: Invoke remote method timeout. method: save, provider: dubbo:&#47;&#47;192.168.130.1:20880&#47;com.wyh.service.user.UserService?anyhost=true&amp;application=userconsumer&amp;check=false&amp;dubbo=2.6.2&amp;generic=false&amp;interface=com.wyh.service.user.UserService&amp;methods=save&amp;pid=84&amp;register.ip=192.168.130.1&amp;remote.timestamp=1536155941829&amp;retries=0&amp;revision=1.0.0&amp;side=consumer&amp;timestamp=1536156021746,
+    cause: Waiting server-side response timeout. start time: 2018-09-05 22:01:18.386, end time: 2018-09-05 22:01:19.391,
+    client elapsed: 0 ms, server elapsed: 1005 ms, timeout: 1000 ms, request: Request [id=1, version=2.0.0, twoway=true,
+    event=false, broken=false, data=RpcInvocation [methodName=save, parameterTypes=[class com.wyh.domain.User],
+    arguments=[com.wyh.domain.User@d094597], attachments={path=com.wyh.service.user.UserService,
+    interface=com.wyh.service.user.UserService, version=0.0.0}]], channel: &#47;192.168.130.1:62698 -&gt; &#47;192.168.130.1:20880
+</p>
+<p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+<p><b>Exception</b></p>
+<pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is com.alibaba.dubbo.rpc.RpcException: Failed to invoke the method save in the service com.wyh.service.user.UserService. Tried 1 times of the providers [192.168.130.1:20880] (1&#47;1) from the registry 47.98.186.179:2181 on the consumer 192.168.130.1 using the dubbo version 2.6.2. Last error is: Invoke remote method timeout. method: save, provider: dubbo:&#47;&#47;192.168.130.1:20880&#47;com.wyh.service.user.UserService?anyhost=true&amp;application=userconsumer&amp;check=false&amp;dubbo=2.6.2&amp;generic=false&amp;interface=com.wyh.service.user.UserService&amp;methods=save&amp;pid=84&amp;register.ip=192.168.130.1&amp;remote.timestamp=1536155941829&amp;retries=0&amp;revision=1.0.0&amp;side=consumer&amp;timestamp=1536156021746, cause: Waiting server-side response timeout. start time: 2018-09-05 22:01:18.386, end time: 2018-09-05 22:01:19.391, client elapsed: 0 ms, server elapsed: 1005 ms, timeout: 1000 ms, request: Request [id=1, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=save, parameterTypes=[class com.wyh.domain.User], arguments=[com.wyh.domain.User@d094597], attachments={path=com.wyh.service.user.UserService, interface=com.wyh.service.user.UserService, version=0.0.0}]], channel: &#47;192.168.130.1:62698 -&gt; &#47;192.168.130.1:20880
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	com.wyh.common.cros.CROSFilter.doFilter(CROSFilter.java:23)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>com.alibaba.dubbo.rpc.RpcException: Failed to invoke the method save in the service com.wyh.service.user.UserService. Tried 1 times of the providers [192.168.130.1:20880] (1&#47;1) from the registry 47.98.186.179:2181 on the consumer 192.168.130.1 using the dubbo version 2.6.2. Last error is: Invoke remote method timeout. method: save, provider: dubbo:&#47;&#47;192.168.130.1:20880&#47;com.wyh.service.user.UserService?anyhost=true&amp;application=userconsumer&amp;check=false&amp;dubbo=2.6.2&amp;generic=false&amp;interface=com.wyh.service.user.UserService&amp;methods=save&amp;pid=84&amp;register.ip=192.168.130.1&amp;remote.timestamp=1536155941829&amp;retries=0&amp;revision=1.0.0&amp;side=consumer&amp;timestamp=1536156021746, cause: Waiting server-side response timeout. start time: 2018-09-05 22:01:18.386, end time: 2018-09-05 22:01:19.391, client elapsed: 0 ms, server elapsed: 1005 ms, timeout: 1000 ms, request: Request [id=1, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=save, parameterTypes=[class com.wyh.domain.User], arguments=[com.wyh.domain.User@d094597], attachments={path=com.wyh.service.user.UserService, interface=com.wyh.service.user.UserService, version=0.0.0}]], channel: &#47;192.168.130.1:62698 -&gt; &#47;192.168.130.1:20880
+	com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:102)
+	com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:238)
+	com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:75)
+	com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	com.alibaba.dubbo.common.bytecode.proxy0.save(proxy0.java)
+	com.wyh.controller.user.UserController.save(UserController.java:16)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	com.wyh.common.cros.CROSFilter.doFilter(CROSFilter.java:23)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2018-09-05 22:01:18.386, end time: 2018-09-05 22:01:19.391, client elapsed: 0 ms, server elapsed: 1005 ms, timeout: 1000 ms, request: Request [id=1, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=save, parameterTypes=[class com.wyh.domain.User], arguments=[com.wyh.domain.User@d094597], attachments={path=com.wyh.service.user.UserService, interface=com.wyh.service.user.UserService, version=0.0.0}]], channel: &#47;192.168.130.1:62698 -&gt; &#47;192.168.130.1:20880
+	com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:136)
+	com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:112)
+	com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:95)
+	com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:148)
+	com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:77)
+	com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:72)
+	com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:54)
+	com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:72)
+	com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:72)
+	com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:56)
+	com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:78)
+	com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:238)
+	com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:75)
+	com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	com.alibaba.dubbo.common.bytecode.proxy0.save(proxy0.java)
+	com.wyh.controller.user.UserController.save(UserController.java:16)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	com.wyh.common.cros.CROSFilter.doFilter(CROSFilter.java:23)
+</pre>
+<p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p>
+<hr class="line"/>
+<h3>Apache Tomcat/9.0.8</h3></body>
+</html>

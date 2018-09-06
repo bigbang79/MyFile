@@ -1,0 +1,48 @@
+POST http://localhost:8081/usersave.do?username=ttt&password=ccc&phone=123
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-05T110410.500.html
+
+###
+
+POST http://localhost:8081/usersave.do?username=ttt&password=ccc&phone=123
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-05T100119.500.html
+
+###
+
+POST http://localhost:8081/usersave.do?username=ttt&password=ccc&phone=123
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-05T100042.500.html
+
+###
+
+POST http://localhost:8081/usersave.do?username=ttt&password=ccc&phone=123
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-05T095501.500.html
+
+###
+
+POST http://localhost:8081/usersave.do?username=ttt&password=ccc&phone=123
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-05T095150.500.html
+
+###
+
+POST http://localhost:8081/usersave.do?username=ttt&password=ccc&phone=123
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-05T093909.500.html
+
+###
+

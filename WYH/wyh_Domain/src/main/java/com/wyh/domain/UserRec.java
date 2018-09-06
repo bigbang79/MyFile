@@ -1,8 +1,9 @@
 package com.wyh.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class UserRec {
+public class UserRec implements Serializable {
     private Integer id,recuid,berecuid;
     private Date createtime;
 

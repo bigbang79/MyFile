@@ -21,6 +21,11 @@
             <artifactId>wyh_Common</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.wyh</groupId>
+            <artifactId>wyh_Mapper</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 
 </project>

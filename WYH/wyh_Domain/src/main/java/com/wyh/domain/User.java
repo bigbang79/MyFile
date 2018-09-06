@@ -1,8 +1,9 @@
 package com.wyh.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class User {
+public class User implements Serializable {
     private Integer id,flag;
     private String username,password,phone;
     private Date creataedate;

@@ -4,6 +4,6 @@ import com.wyh.domain.User;
 import org.apache.ibatis.annotations.Insert;
 
 public interface UserMapper {
-    @Insert("insert into t_user (username, password, phone, flag, createdate)values ( #{username}, #{password},  #{phone}, #{flag}, #{createdate})")
+    @Insert("insert into t_user (username, password, phone, flag, createdate)values ( #{username}, #{password},  #{phone}, 1, #{createdate})")
     int insert(User user);
 }
